@@ -1,0 +1,30 @@
+      body {
+        font-family: Arial, sans-serif;
+        background: #faf6ef;
+      }
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 30px auto;
+      }
+      th,
+      td {
+        border: 1px solid #b89d77;
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background-color: #e8bc7a;
+        color: #654321;
+      }
+      .cart-btn:hover {
+        background: #eab353;
+      }
+      .book-img {
+        width: 50px;
+        height: 70px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 3px;
+      }
