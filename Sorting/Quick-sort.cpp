@@ -2,12 +2,15 @@
 using namespace std;
 
 // Partition function
-int partition(int arr[], int low, int high) {
+int partition(int arr[], int low, int high)
+{
     int pivot = arr[high]; // pivot element
     int i = (low - 1);     // index of smaller element
 
-    for (int j = low; j < high; j++) {
-        if (arr[j] < pivot) {
+    for (int j = low; j < high; j++)
+    {
+        if (arr[j] < pivot)
+        {
             i++;
             swap(arr[i], arr[j]);
         }
@@ -17,8 +20,10 @@ int partition(int arr[], int low, int high) {
 }
 
 // QuickSort function
-void quickSort(int arr[], int low, int high) {
-    if (low < high) {
+void quickSort(int arr[], int low, int high)
+{
+    if (low < high)
+    {
         int pi = partition(arr, low, high);
 
         // Recursively sort elements before and after partition
@@ -28,16 +33,18 @@ void quickSort(int arr[], int low, int high) {
 }
 
 // Utility function to print array
-void printArray(int arr[], int n) {
+void printArray(int arr[], int n)
+{
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 }
 
-int main() {
+int main()
+{
     int arr[] = {10, 7, 8, 9, 1, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
-
+    cout << "Quick-sort" << endl;
     cout << "Original array: ";
     printArray(arr, n);
 

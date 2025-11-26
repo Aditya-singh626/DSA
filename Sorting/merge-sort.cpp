@@ -2,7 +2,8 @@
 using namespace std;
 
 // Merge two subarrays: arr[l..m] and arr[m+1..r]
-void merge(int arr[], int l, int m, int r) {
+void merge(int arr[], int l, int m, int r)
+{
     int n1 = m - l + 1; // size of left subarray
     int n2 = r - m;     // size of right subarray
 
@@ -17,11 +18,15 @@ void merge(int arr[], int l, int m, int r) {
 
     // Merge temp arrays back into arr[l..r]
     int i = 0, j = 0, k = l;
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
+    while (i < n1 && j < n2)
+    {
+        if (L[i] <= R[j])
+        {
             arr[k] = L[i];
             i++;
-        } else {
+        }
+        else
+        {
             arr[k] = R[j];
             j++;
         }
@@ -29,14 +34,16 @@ void merge(int arr[], int l, int m, int r) {
     }
 
     // Copy remaining elements of L[]
-    while (i < n1) {
+    while (i < n1)
+    {
         arr[k] = L[i];
         i++;
         k++;
     }
 
     // Copy remaining elements of R[]
-    while (j < n2) {
+    while (j < n2)
+    {
         arr[k] = R[j];
         j++;
         k++;
@@ -44,8 +51,10 @@ void merge(int arr[], int l, int m, int r) {
 }
 
 // Merge Sort function
-void mergeSort(int arr[], int l, int r) {
-    if (l < r) {
+void mergeSort(int arr[], int l, int r)
+{
+    if (l < r)
+    {
         int m = l + (r - l) / 2; // midpoint
 
         // Sort first and second halves
@@ -58,17 +67,19 @@ void mergeSort(int arr[], int l, int r) {
 }
 
 // Utility function to print array
-void printArray(int arr[], int n) {
+void printArray(int arr[], int n)
+{
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 }
 
 // Driver code
-int main() {
+int main()
+{
     int arr[] = {12, 11, 13, 5, 6, 7};
     int n = sizeof(arr) / sizeof(arr[0]);
-
+    cout << "Merge-sort" << endl;
     cout << "Original array: ";
     printArray(arr, n);
 

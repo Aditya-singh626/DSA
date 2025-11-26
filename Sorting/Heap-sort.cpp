@@ -2,10 +2,11 @@
 using namespace std;
 
 // Function to heapify a subtree rooted at index i
-void heapify(int arr[], int n, int i) {
-    int largest = i;        // Initialize largest as root
-    int left = 2 * i + 1;   // left child
-    int right = 2 * i + 2;  // right child
+void heapify(int arr[], int n, int i)
+{
+    int largest = i;       // Initialize largest as root
+    int left = 2 * i + 1;  // left child
+    int right = 2 * i + 2; // right child
 
     // If left child is larger than root
     if (left < n && arr[left] > arr[largest])
@@ -16,7 +17,8 @@ void heapify(int arr[], int n, int i) {
         largest = right;
 
     // If largest is not root
-    if (largest != i) {
+    if (largest != i)
+    {
         swap(arr[i], arr[largest]);
 
         // Recursively heapify the affected subtree
@@ -25,13 +27,15 @@ void heapify(int arr[], int n, int i) {
 }
 
 // Main function to perform heap sort
-void heapSort(int arr[], int n) {
+void heapSort(int arr[], int n)
+{
     // Build max heap
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, n, i);
 
     // Extract elements one by one
-    for (int i = n - 1; i > 0; i--) {
+    for (int i = n - 1; i > 0; i--)
+    {
         // Move current root to end
         swap(arr[0], arr[i]);
 
@@ -41,17 +45,19 @@ void heapSort(int arr[], int n) {
 }
 
 // Utility function to print array
-void printArray(int arr[], int n) {
+void printArray(int arr[], int n)
+{
     for (int i = 0; i < n; ++i)
         cout << arr[i] << " ";
     cout << endl;
 }
 
 // Driver code
-int main() {
+int main()
+{
     int arr[] = {4, 10, 3, 5, 1};
     int n = sizeof(arr) / sizeof(arr[0]);
-
+    cout << "Heap-sort" << endl;
     cout << "Original array: ";
     printArray(arr, n);
 

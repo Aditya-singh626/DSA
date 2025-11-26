@@ -2,7 +2,8 @@
 using namespace std;
 
 // A utility function to get maximum value in arr[]
-int getMax(int arr[], int n) {
+int getMax(int arr[], int n)
+{
     int mx = arr[0];
     for (int i = 1; i < n; i++)
         if (arr[i] > mx)
@@ -11,7 +12,8 @@ int getMax(int arr[], int n) {
 }
 
 // A function to do counting sort of arr[] according to the digit represented by exp
-void countSort(int arr[], int n, int exp) {
+void countSort(int arr[], int n, int exp)
+{
     int output[n]; // output array
     int count[10] = {0};
 
@@ -24,7 +26,8 @@ void countSort(int arr[], int n, int exp) {
         count[i] += count[i - 1];
 
     // Build the output array
-    for (int i = n - 1; i >= 0; i--) {
+    for (int i = n - 1; i >= 0; i--)
+    {
         output[count[(arr[i] / exp) % 10] - 1] = arr[i];
         count[(arr[i] / exp) % 10]--;
     }
@@ -35,7 +38,8 @@ void countSort(int arr[], int n, int exp) {
 }
 
 // Radix Sort function
-void radixSort(int arr[], int n) {
+void radixSort(int arr[], int n)
+{
     int m = getMax(arr, n);
 
     // Do counting sort for every digit
@@ -44,16 +48,18 @@ void radixSort(int arr[], int n) {
 }
 
 // Utility function to print array
-void printArray(int arr[], int n) {
+void printArray(int arr[], int n)
+{
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 }
 
-int main() {
+int main()
+{
     int arr[] = {170, 45, 75, 90, 802, 24, 2, 66};
     int n = sizeof(arr) / sizeof(arr[0]);
-
+    cout << "Radix-sort" << endl;
     cout << "Original array: ";
     printArray(arr, n);
 

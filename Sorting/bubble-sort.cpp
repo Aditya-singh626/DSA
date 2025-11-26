@@ -38,6 +38,7 @@ void printVector(const vector<int> &a)
 int main()
 {
     int n;
+    cout << "Bubble-Sort" << endl;
     cout << "Enter number of elements: ";
     if (!(cin >> n) || n <= 0)
     {
@@ -48,7 +49,6 @@ int main()
     cout << "Enter " << n << " integers:\n";
     for (int i = 0; i < n; ++i)
         cin >> arr[i];
-
     cout << "Before sorting:\n";
     printVector(arr);
 

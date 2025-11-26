@@ -21,4 +21,12 @@ capacity() tells you how many elements the vector can hold before it needs to gr
 In C++, sort is a function from the <algorithm> header used to arrange the elements of a vector (or any container with random access iterators) in ascending order by default.
 
 # reverse
+
 In C++, reverse is a function from the <algorithm> header that reverses the order of elements in a vector (or any container with random access iterators).
+
+# Push and Pop property of c++
+
+📌 arr.push_back(i) in C++ vectors
+
+- arr → is a vector<int> (a dynamic array of integers).
+- push_back(i) → is a method of vector that adds an element to the end of the vector.
