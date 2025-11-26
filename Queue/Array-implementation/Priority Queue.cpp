@@ -120,7 +120,7 @@ struct PriorityQueue
 int main()
 {
     PriorityQueue pq;
-
+    cout << "Priority Queue Operations:" << endl;
     pq.enqueue(10, 2);
     pq.enqueue(20, 1);
     pq.enqueue(30, 3);
