@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+void increment(int *ptr)
+{
+    (*ptr)++;
+}
+int main()
+{
+    int *p;    // pointer to int
+    char *c;   // pointer to char
+    double *d; // pointer to double
+
+    int x = 10;
+    int *p = &x; // p stores address of x
+    cout << *p;  // dereference → prints 10
+
+    int arr[3] = {10, 20, 30};
+    int *p = arr;     // points to arr[0]
+    cout << *(p + 1); // prints 20
+
+    int x = 5;
+    increment(&x);
+    cout << x; // prints 6
+
+    int *p = new int(10); // allocate memory
+    cout << *p;           // prints 10
+    delete p;             // free memory
+
+    return 0;
+}
