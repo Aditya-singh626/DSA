@@ -13,6 +13,7 @@ int main()
     int x = 10;
     int *p = &x; // p stores address of x
     cout << *p;  // dereference → prints 10
+    cout << p;
 
     int arr[3] = {10, 20, 30};
     int *p = arr;     // points to arr[0]
@@ -25,6 +26,7 @@ int main()
     int *p = new int(10); // allocate memory
     cout << *p;           // prints 10
     delete p;             // free memory
+
 
     return 0;
 }

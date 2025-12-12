@@ -1,0 +1,2 @@
+Line 3: Added using writelines()
+Line 4: Another writelines() entry

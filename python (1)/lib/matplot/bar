@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+fruit = ["apple","green","red"]
+quantity = [20,34,30]
+
+# Create bar plot
+
+# plt.bar(fruit,quantity,color=["red","green","blue"])
+# plt.xlabel("Fruit")
+# plt.ylabel("Quantity")
+# plt.show()
+
+
+
+#
