@@ -8,7 +8,15 @@ struct stack
 } s;
 void push(int t)
 {
-    s.items[++s.top] = t;
+    if(s.top>=MAX-1)
+    {
+        printf("\n\t Stack is over flow");
+    }
+    else
+    {
+        s.top = s.top + 1;
+        s.items[s.top]=t;
+    }
 }
 void pop()
 {

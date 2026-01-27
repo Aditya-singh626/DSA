@@ -31,7 +31,7 @@ int main()
     cout << "arr :5, 10, 15, 20, 25, 30, 35, 40 " << endl;
     cout << "Element to find : 25" << endl;
     if (result != -1)
-        cout << "Element " << key << " found at index " << result << endl;
+        cout << "Element " << key << " found at index " << result+1 << endl;
     else
         cout << "Element " << key << " not found" << endl;
 

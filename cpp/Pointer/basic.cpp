@@ -27,6 +27,16 @@ int main()
     cout << *p;           // prints 10
     delete p;             // free memory
 
+    int *p;
+    int x = 42;
+    p = &x;
+    cout << "Value of x: " << *p << endl;  // dereferencing pointer to get value
+    cout << "Address of x: " << p << endl; // printing address stored in pointer
+    int **t;
+    t = &p;
+    cout << " address of p : " << t << endl;
+    cout << " Value of *t : " << *t << endl;
+    cout << " Value of x using double pointer dereferencing (**t): " << **t << endl;
 
     return 0;
 }

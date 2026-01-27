@@ -25,7 +25,7 @@
 - Type: Divide and Conquer.
 - Method: Recursively splits the array into halves, sorts each half, then merges them back in sorted order.
 - Complexity:
-- Best/Average/Worst: O(n\log n).
+- Best/Average/Worst: O(n log n).
 - Use Case: Stable sort, great for linked lists and large datasets.
 
 # ⚡ Quick Sort
@@ -33,7 +33,7 @@
 - Type: Divide and Conquer.
 - Method: Selects a pivot, partitions the array so smaller elements go left and larger go right, then recursively sorts partitions.
 - Complexity:
-- Best/Average: O(n\log n).
+- Best/Average: O(n log n).
 - Worst: O(n^2) (if pivot choice is poor).
 - Use Case: Very fast in practice for arrays; widely used.
 

@@ -5,8 +5,8 @@ using namespace std;
 int main() {
     vector<int> v;  
     cout << "Initially: " << endl;
-    cout << "Size: " << v.size() << endl;
-    cout << "Capacity: " << v.capacity() << endl;
+    cout << "Size: " << v.size() << endl;//.size()	Number of elements currently in the vector
+    cout << "Capacity: " << v.capacity() << endl; //.capacity()	Total number of elements that can be held in currently allocated storage
 
     // Add elements
     for (int i = 0; i < 10; ++i) {

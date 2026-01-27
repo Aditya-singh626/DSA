@@ -5,6 +5,7 @@ int main()
     // Name: Aditya singh
     // Roll No,:2400320100093 
     int arr[100], i, n, pos, element;
+    //Take input from user
     printf("Enter the size of array:");
     scanf("%d", &n);
     printf("Enter the elements of array:");
@@ -17,6 +18,7 @@ int main()
     {
         printf("%d ", arr[i]);
     }
+    // insert element
     printf("\nEnter the position to insert element:");
     scanf("%d", &pos);
     printf("Enter the element to insert:");
