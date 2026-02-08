@@ -1,5 +1,7 @@
+
 #include <iostream>
 #include <vector>
+#include <queue>
 using namespace std;
 
 int main() {
@@ -12,7 +14,7 @@ int main() {
     cout << "Enter the number of edges: ";
     cin >> E;
 
-    vector<vector<int>> AdjList(N);
+    vector<int> AdjList[N];
 
     for(int i = 1; i <= E; i++) {
         cout << "Enter the end points of the Edge " << i << ": ";
