@@ -20,7 +20,9 @@ public:
         this->cgpa = new double; // allocate new memory for cgpa
         *(this->cgpa) = *(s.cgpa); // copy the value of cgpa
     };
-    ~student() { delete cgpa; }
+    ~student() { delete cgpa; } // created destruter by me because the compiler destruter do not delete the memory allocated iin heap.
+                                // here delete does not mean we are deleting the pointer cgpa.
+                                // we are deleteingis the space it pointing to .  
 };
 
 int main()
@@ -30,4 +32,5 @@ int main()
     *(s2.cgpa) = 8.5;                                   // Modifying s2's cgpa does not affect s1's cgpa
     cout << s1.name << "'s CGPA: " << *s1.cgpa << "\n"; // prints 9.5
     cout << s2.name << "'s CGPA: " << *s2.cgpa << "\n"; // prints 8.5
+    //after this main funtion and we hace to free the space iin heap that cgpa pointer is pointing
 }

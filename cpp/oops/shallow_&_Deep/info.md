@@ -11,6 +11,7 @@
 * The copy has its own memory, independent of the original.
 * Effect: Changing the copy does not affect the original.
 * Think of it like: Two different remote controls, each with its own TV.
+* image to under stand the deep copy ![alt text](image.png)
 
 This way, you can remember:
 
