@@ -12,9 +12,16 @@ int main() {
     student[3] = "Neha";
 
     // Traversing map
-    for (auto it : student) {
-        cout << it.first << " -> " << it.second << endl;
-    }
+    // for (auto it : student) {
+    //     cout << it.first << " -> " << it.second << endl;
+    // }
 
+    //pair
+    pair<int, string> p ;
+    // p = {
+    //     4, "Sita"
+    // };
+    p = make_pair(5, "Gita");
+    cout << p.first << " -> " << p.second << endl;
     return 0;
 }

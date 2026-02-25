@@ -56,3 +56,61 @@ Here:
 - Extend by adding new members.
 - Override to change behavior.
   It’s like building on top of a foundation: you don’t start from scratch, you extend what’s already there.
+
+# construter call in inheritence
+
+In C++ inheritance, constructors are called in a specific sequence when you create an object of a derived (child) class:
+🔹 Order of Constructor Calls
+
+- Base class constructor(s) are called first.
+- If there are multiple base classes, they are called in the order they appear in the inheritance list.
+- Member object constructors (if the derived class contains objects of other classes as members).
+- Derived class constructor is called last.
+  🔹 Order of Destructor Calls
+- The reverse happens during destruction:
+- Derived class destructor runs first.
+- Then member object destructors.
+- Finally, base class destructors.
+  example :
+  ***
+  #include <iostream>
+  using namespace std;
+
+class Parent {
+public:
+Parent() {
+cout << "Parent constructor called" << endl;
+}
+~Parent() {
+cout << "Parent destructor called" << endl;
+}
+};
+
+class Child : public Parent {
+public:
+Child() {
+cout << "Child constructor called" << endl;
+}
+~Child() {
+cout << "Child destructor called" << endl;
+}
+};
+
+int main() {
+Child obj;
+return 0;
+}
+
+---
+
+# Mode of inheritance 🔎 Explanation
+- Private members of the base class are never inherited directly. They are accessible only within the base class itself.
+- Protected members:
+- If inherited privately, they become private in the derived class.
+- If inherited protectedly, they remain protected.
+- If inherited publicly, they remain protected.
+- Public members:
+- If inherited privately, they become private in the derived class.
+- If inherited protectedly, they become protected.
+- If inherited publicly, they remain public.
+- ![alt text](<Screenshot 2026-02-25 142320.png>)
