@@ -114,3 +114,5 @@ return 0;
 - If inherited protectedly, they become protected.
 - If inherited publicly, they remain public.
 - ![alt text](<Screenshot 2026-02-25 142320.png>)
+
+# Type of inheritence
