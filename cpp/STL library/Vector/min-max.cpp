@@ -12,11 +12,11 @@ int main()
         return 0;
     }
 
-    auto min_it = min_element(nums.begin(), nums.end());
-    auto max_it = max_element(nums.begin(), nums.end());
+    auto min_it = *min_element(nums.begin(), nums.end());
+    auto max_it = *max_element(nums.begin(), nums.end());
 
-    cout << "Min: " << *min_it << "\n";
-    cout << "Max: " << *max_it << "\n";
+    cout << "Min: " << min_it << "\n";
+    cout << "Max: " << max_it << "\n";
 
     return 0;
 }

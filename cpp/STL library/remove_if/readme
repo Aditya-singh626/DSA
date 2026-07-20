@@ -1,0 +1,4 @@
+=>remove_if(first_iterator, last_iterator, predicate);
+   - first_iterator → start of the range (e.g., v.begin()).
+   - last_iterator → end of the range (e.g., v.end()).
+   - predicate → a function, functor, or lambda that returns true for elements you want removed
